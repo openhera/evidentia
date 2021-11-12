@@ -4,35 +4,19 @@
 
 @section('content')
 
-    <div class="card shadow-lg">
+    <form action="{{route('password.reset_p',$instance)}}" method="post">
+        @csrf
 
-        <div class="card-body">
-
-            <form action="{{route('password.reset_p',$instance)}}" method="post">
-                @csrf
-
-                <div class="input-group mb-3">
-                    <input name="email" required type="email" class="form-control" placeholder="Email"  autocomplete="username" autofocus>
-                    <div class="input-group-append">
-                        <div class="input-group-text">
-                            <span class="fas fa-envelope"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-
-                <div class="col-sm-12 col-lg-12">
-                    <button type="submit" class="btn btn-primary btn-block">Restablecer contraseña</button>
-
-                </div>
-
-                </div>
-
-            </form>
-
+        <div class="form-group">
+            <input name="email" required type="email" class="form-control" placeholder="Email"  autocomplete="username" autofocus>
         </div>
 
-    </div>
+        <!-- Submit -->
+        <button type="submit" class="btn btn-lg w-100 btn-primary mb-3">
+            Restablecer contraseña
+        </button>
+
+    </form>
+
 
 @endsection
