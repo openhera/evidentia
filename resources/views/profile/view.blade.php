@@ -19,7 +19,7 @@
         </div>
 
         <div class="col-md-8">
-            <div class="card shadow-lg">
+            <div class="card">
                 <div class="card-header p-2">
                     <ul class="nav nav-pills">
                         <li class="nav-item"><a class="nav-link active" href="#data" data-toggle="tab">Personal</a></li>

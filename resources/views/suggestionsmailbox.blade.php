@@ -17,7 +17,7 @@
 
         <div class="col-lg-8">
 
-            <div class="card shadow-lg">
+            <div class="card">
 
                 <div class="card-body">
 

@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <div class="card shadow-lg">
+    <div class="card">
 
         <div class="card-body">
             <form action="{{route('password.update_p',["instance" => $instance, "token" => $token])}}" method="post">

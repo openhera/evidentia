@@ -1,18 +1,22 @@
 @if(\Illuminate\Support\Facades\Auth::user()->hasRole('STUDENT'))
 
-    <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+    <!-- Heading -->
+    <h6 class="navbar-heading">
+        Mis cosas
+    </h6>
 
-            <li class="nav-header">MIS COSAS</li>
-            @if(!\Carbon\Carbon::now()->gt(\Config::upload_evidences_timestamp()))
-            <x-li route="evidence.create" icon='fab fa-angellist' name="Crear evidencia"/>
-            @endif
-            <x-li route="evidence.list" secondaries="evidence.view,evidence.edit" icon='fas fa-id-badge' name="Mis evidencias"/>
-            <x-li route="meeting.list" icon='fas fa-cocktail' name="Mis reuniones"/>
-            <x-li route="attendee.list" icon='fas fa-hiking' name="Mis asistencias"/>
-            <!-- <x-li route="home" icon='fas fa-folder' name="Gestor de archivos"/> -->
+    <ul class="navbar-nav">
 
-        </ul>
-    </nav>
+        @if(!\Carbon\Carbon::now()->gt(\Config::upload_evidences_timestamp()))
+            <x-li route="evidence.create" icon='fe fe-plus-circle' name="Crear evidencia"></x-li>
+        @endif
+        <x-li route="evidence.list" secondaries="evidence.view,evidence.edit" icon='fe fe-briefcase' name="Mis evidencias"></x-li>
+        <x-li route="meeting.list" icon='fe fe-users' name="Mis reuniones"></x-li>
+        <x-li route="attendee.list" icon='fe fe-book-open' name="Mis asistencias"></x-li>
+
+    </ul>
+
 @endif
 
+<!-- Divider -->
+<hr class="navbar-divider my-3">

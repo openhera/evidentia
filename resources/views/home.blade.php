@@ -1,9 +1,24 @@
 @extends('layouts.app')
 
+@section('pretitle', 'Vista general')
 @section('title', 'Dashboard')
-@section('title-icon', 'fas fa-tachometer-alt')
+
+@section('options')
+
+    {{--
+
+    <!-- Button -->
+    <a href="#!" class="btn btn-primary lift">
+        Create Report
+    </a>
+
+    --}}
+
+@endsection
 
 @section('content')
+
+    {{--
 
     <div class="row">
 
@@ -262,6 +277,8 @@
 
 
     </div>
+
+    --}}
 
 
 @endsection

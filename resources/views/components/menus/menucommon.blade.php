@@ -1,13 +1,15 @@
+<!-- Heading -->
+<h6 class="navbar-heading">
+    Mi cuenta
+</h6>
 
-    <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+<ul class="navbar-nav">
 
-            <li class="nav-header">MI CUENTA</li>
-            <x-li route="home" icon='fas fa-tachometer-alt' name="Dashboard"/>
-            <x-li route="profile.view" icon='fas fa-user' name="Mi perfil"/>
-            <!-- <x-li route="message.mailbox" icon='fas fa-envelope' name="Mensajes"/> -->
+    <x-li route="home" icon='fe fe-home' name="Dashboard"></x-li>
+    <x-li route="profile.view" icon='fe fe-user' name="Mi perfil"></x-li>
+    <x-li route="suggestionsmailbox" icon='fe fe-settings' name="Configuración"></x-li>
 
-        </ul>
-    </nav>
+</ul>
 
-
+<!-- Divider -->
+<hr class="navbar-divider my-3">

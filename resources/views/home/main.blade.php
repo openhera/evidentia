@@ -200,9 +200,6 @@
 <!-- Theme JS -->
 <script src="{{ asset('dist/js/theme.bundle.js') }}"></script>
 
-<!-- Toastr -->
-<script src="{{asset('plugins/toastr/toastr.min.js')}}"></script>
-
 <!-- Alert -->
 <script src="{{asset('dist/js/alerts.js')}}"></script>
 
